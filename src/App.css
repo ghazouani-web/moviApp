@@ -1,0 +1,15 @@
+.chay{
+  display: flex;
+  justify-content: space-between
+  
+}
+
+.add{
+    padding: 50px;
+  border: solid;
+  border-color: rgb(214, 211, 211);
+  border-radius: 2%;
+  height: 50%;
+  width: 50%;
+
+}
