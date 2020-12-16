@@ -32,7 +32,6 @@ import { Modal, Button,InputGroup ,FormControl} from "react-bootstrap";
     const onChangeHandler = (e) =>
     setNewMovie({ ...newMovie, [e.target.name]: e.target.value });
   const handleClick = (e) => {
-    e.preventDefault();
     addMovi(newMovie);
   };   
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Button } from "react-bootstrap";
 import StarRatingComponent from 'react-star-rating-component';
-
+import   {Link}  from 'react-router-dom';
 
 import Rate from "./Rate";
 
@@ -16,8 +16,11 @@ export default function MovieListe(props) {
 
   return (
     <div>
-      <Card>
-        <Card.Img variant="top" src={props.el.posterUrl} />
+      <Card >
+
+          <Link  to={`/video/${props.el.id}`} >
+        <Card.Img variant="top" src={props.el.posterUrl}    />
+        </Link>
         <Card.Body>
           <Card.Title> {props.el.Titel}</Card.Title>
           <Card.Text> {props.el.description} </Card.Text>
